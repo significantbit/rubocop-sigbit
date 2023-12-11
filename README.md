@@ -19,4 +19,14 @@ Add to the top of your `.rubocop.yml`:
 ```yml
 inherit_gem:
   rubocop-sigbit: .rubocop.yml
+
+AllCops:
+  Exclude:
+    - spec/**/*
+    - vendor/**/*
+    - node_modules/**/*
+    - db/schema.rb
+    - db/migrate/**/*
+    - bin/**/*
+    - lib/**/*.rake
 ```
