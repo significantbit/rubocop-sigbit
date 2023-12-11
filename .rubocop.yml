@@ -153,6 +153,8 @@ Style/GlobalVars:
 
 Metrics/MethodLength:
   Enabled: true
+  Max: 40
+  CountAsOne: ['array', 'heredoc', 'method_call']
   Severity: warning
 
 Naming/RescuedExceptionsVariableName:
