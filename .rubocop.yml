@@ -187,6 +187,15 @@ Metrics/BlockLength:
 Layout/LineLength:
   Enabled: false
 
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
 # ----------------
 # Rails cops
 # ----------------
