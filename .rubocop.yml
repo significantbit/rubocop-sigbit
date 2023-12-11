@@ -142,8 +142,7 @@ Lint/RequireParentheses:
 
 # Use variable_1, not variable1.
 Naming/VariableNumber:
-  Enabled: true
-  EnforcedStyle: snake_case
+  Enabled: false
 
 # Order gems alphabetically in Gemfile.
 Bundler/OrderedGems:
