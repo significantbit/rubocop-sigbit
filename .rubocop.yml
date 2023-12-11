@@ -159,7 +159,6 @@ Bundler/GemComment:
 # Warnings
 # ----------------
 Style/Documentation:
-  Enabled: true
   Severity: warning
 
 Style/GlobalVars:
