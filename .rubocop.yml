@@ -1,0 +1,196 @@
+require: rubocop-rails
+
+AllCops:
+  # Enable new cops by default
+  NewCops: enable
+  Exclude:
+    - spec/**/*
+    - vendor/**/*
+    - node_modules/**/*
+    - db/schema.rb
+    - db/migrate/**/*
+    - bin/**/*
+    - lib/**/*.rake
+
+Metrics/ClassLength:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+# Align `when` with `case`.
+Layout/CaseIndentation:
+  Enabled: true
+  IndentOneStep: true
+
+# Align comments with method definitions.
+Layout/CommentIndentation:
+  Enabled: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+# In a regular class definition, no empty lines around the body.
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+# In a regular method definition, no empty lines around the body.
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+# In a regular module definition, no empty lines around the body.
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+# Method definitions after `private` or `protected` isolated calls need one extra level of indentation.
+Layout/IndentationConsistency:
+  Enabled: true
+  EnforcedStyle: indented_internal_methods
+
+# Two spaces, no tabs (for indentation).
+Layout/IndentationWidth:
+  Enabled: true
+
+Layout/SpaceAfterColon:
+  Enabled: true
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Layout/SpaceInsideParens:
+  Enabled: true
+
+# Detect hard tabs, no hard tabs.
+Layout/IndentationStyle:
+  Enabled: true
+
+# Blank lines should not have any spaces.
+Layout/TrailingEmptyLines:
+  Enabled: true
+
+# No trailing whitespace.
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Hash indentation.
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+# Use quotes for string literals when they are enough.
+Style/RedundantPercentQ:
+  Enabled: true
+
+# Use [:foo, :bar], not %i[foo bar].
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+# Align `end` with the matching keyword or starting expression except for
+# assignments, where it should be aligned with the LHS.
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+
+# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
+Style/HashSyntax:
+  Enabled: true
+
+Style/MethodDefParentheses:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+
+Style/RedundantReturn:
+  Enabled: true
+
+Style/Semicolon:
+  Enabled: true
+  AllowAsExpressionSeparator: true
+
+# Use my_number > 0, not my_number.positive?.
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+# Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
+Lint/RequireParentheses:
+  Enabled: true
+
+# Use variable_1, not variable1.
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+# Order gems alphabetically in Gemfile.
+Bundler/OrderedGems:
+  Enabled: true
+
+# Require custom gem version to be described in Gemfile.
+Bundler/GemComment:
+  Enabled: true
+  Severity: warning
+  OnlyFor: ['github']
+
+# ----------------
+# Warnings
+# ----------------
+Style/Documentation:
+  Enabled: true
+  Severity: warning
+
+Style/GlobalVars:
+  Enabled: true
+  Severity: warning
+
+Metrics/BlockLength:
+  Enabled: true
+  Severity: warning
+
+Metrics/MethodLength:
+  Enabled: true
+  Severity: warning
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: exception
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+  Severity: warning
+
+Metrics/AbcSize:
+  Enabled: true
+  Severity: warning
+
+# ----------------
+# Rails cops
+# ----------------
+Rails/OutputSafety:
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
