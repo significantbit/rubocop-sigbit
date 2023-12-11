@@ -165,10 +165,6 @@ Lint/UnusedMethodArgument:
   Enabled: true
   Severity: warning
 
-Metrics/AbcSize:
-  Enabled: true
-  Severity: warning
-
 # ----------------
 # Disabled
 # ----------------
