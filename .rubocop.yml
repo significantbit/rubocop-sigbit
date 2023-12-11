@@ -126,8 +126,17 @@ Style/Semicolon:
   Enabled: true
   AllowAsExpressionSeparator: true
 
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
 # Use my_number > 0, not my_number.positive?.
 Style/NumericPredicate:
+  Enabled: true
   EnforcedStyle: comparison
 
 # Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
