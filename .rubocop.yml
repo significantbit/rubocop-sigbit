@@ -12,12 +12,6 @@ AllCops:
     - bin/**/*
     - lib/**/*.rake
 
-Metrics/ClassLength:
-  Enabled: false
-
-Layout/LineLength:
-  Enabled: false
-
 # Align `when` with `case`.
 Layout/CaseIndentation:
   Enabled: true
@@ -140,10 +134,6 @@ Style/NumericPredicate:
 Lint/RequireParentheses:
   Enabled: true
 
-# Use variable_1, not variable1.
-Naming/VariableNumber:
-  Enabled: false
-
 # Order gems alphabetically in Gemfile.
 Bundler/OrderedGems:
   Enabled: true
@@ -157,14 +147,7 @@ Bundler/GemComment:
 # ----------------
 # Warnings
 # ----------------
-Style/Documentation:
-  Enabled: false
-
 Style/GlobalVars:
-  Enabled: true
-  Severity: warning
-
-Metrics/BlockLength:
   Enabled: true
   Severity: warning
 
@@ -183,6 +166,24 @@ Lint/UnusedMethodArgument:
 Metrics/AbcSize:
   Enabled: true
   Severity: warning
+
+# ----------------
+# Disabled
+# ----------------
+Style/Documentation:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+  
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
 
 # ----------------
 # Rails cops
