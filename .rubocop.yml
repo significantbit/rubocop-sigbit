@@ -154,7 +154,7 @@ Style/GlobalVars:
 Metrics/MethodLength:
   Enabled: true
   Max: 40
-  CountAsOne: ['array', 'heredoc', 'method_call']
+  CountAsOne: ['array', 'hash', 'heredoc']
   Severity: warning
 
 Naming/RescuedExceptionsVariableName:
