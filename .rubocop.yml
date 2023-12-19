@@ -104,6 +104,10 @@ Style/RedundantPercentQ:
 Style/SymbolArray:
   EnforcedStyle: brackets
 
+# Use ["prop", "another"], not %w[prop another]
+Style/WordArray:
+  EnforcedStyle: brackets
+
 # Align `end` with the matching keyword or starting expression except for
 # assignments, where it should be aligned with the LHS.
 Layout/EndAlignment:
