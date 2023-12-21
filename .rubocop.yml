@@ -15,6 +15,7 @@ AllCops:
 # Align `when` with `case`.
 Layout/CaseIndentation:
   Enabled: true
+  EnforcedStyle: end
   IndentOneStep: true
 
 # Align comments with method definitions.
@@ -40,10 +41,6 @@ Layout/EmptyLinesAroundModuleBody:
 Layout/IndentationConsistency:
   Enabled: true
   EnforcedStyle: indented_internal_methods
-
-Layout/CaseIndentation:
-  EnforcedStyle: end
-  IndentOneStep: true
 
 Layout/MultilineMethodCallIndentation:
   Enabled: true
