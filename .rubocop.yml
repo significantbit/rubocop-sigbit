@@ -46,6 +46,10 @@ Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
 
+Layout/ArgumentAlignment:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+
 # Two spaces, no tabs (for indentation).
 Layout/IndentationWidth:
   Enabled: true
